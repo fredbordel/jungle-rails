@@ -56,4 +56,9 @@ class OrdersController < ApplicationController
     order
   end
 
+  def order_total_cents
+    @order.line_items.map {|entry| entry.total_price}.sum
+  end
+  helper_method :order_total_cents
+
 end
