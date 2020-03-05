@@ -7,7 +7,9 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
+      session[:user_id] = @user.id
       redirect_to '/'
+
     else
       redirect_to '/signup'
     end
@@ -20,7 +22,8 @@ class UsersController < ApplicationController
       :first_name,
       :last_name,
       :email,
-      :password
+      :password,
+      :password_confirmation
     )
   end
 
