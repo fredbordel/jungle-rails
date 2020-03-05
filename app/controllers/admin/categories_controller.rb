@@ -4,7 +4,7 @@ class Admin::CategoriesController < ApplicationController
                                password: ENV["HTTP_ADMIN_PASSWORD"]
 
   def index
-    @categories = Category.product(id: :desc).all
+    @categories = Category.all
   end
 
   def new
@@ -12,6 +12,6 @@ class Admin::CategoriesController < ApplicationController
   end
 
   def create
-    @category = Category.new(product_params)
+    @category = Category.new(params[:category])
   end
 end
