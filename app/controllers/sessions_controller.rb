@@ -11,8 +11,10 @@ class SessionsController < ApplicationController
       # logged in when they navigate around our website.
       session[:user_id] = user.id
       redirect_to '/'
+    elsif !user || !user.authenticate(params[:password])
+      redirect_to '/login'
+      flash.alert = "Username or password is incorrect. Or maybe both..."
     else
-    # If user's login doesn't work, send them back to the login form.
       redirect_to '/login'
     end
   end
