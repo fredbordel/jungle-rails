@@ -1,8 +1,9 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.<br/>
 !["Jungle_homepage"](https://github.com/fredbordel/jungle-rails/blob/master/docs/jungle_homepage.png?raw=true)
-
+!["Jungle_cart"](https://github.com/fredbordel/jungle-rails/blob/master/docs/jungle_cart.png?raw=true)
+!["Jungle_product"](https://github.com/fredbordel/jungle-rails/blob/master/docs/jungle_product.png?raw=true)<br/>
 ## Setup
 
 1. Run `bundle install` to install dependencies
