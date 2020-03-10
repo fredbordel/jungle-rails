@@ -37,8 +37,43 @@ RSpec.describe User, type: :model do
       it 'is not valid if password_confirmation != password' do
         subject.password_confirmation = 'somethingelse'
         expect(subject).to_not be_valid
+      end      
+    end
+
+    describe '.authenticate_with_credentials' do
+      subject(:user) {
+        User.new(
+             first_name: 'Soph',
+             last_name: 'Webber',
+             email: 'some@email.com',
+             password: 'password12',
+             password_confirmation: 'password12'
+        )
+      }
+      it 'should authenticate with right credentials' do
+        expect(user).to be_valid
       end
-  end
+
+      it 'should not authenticate if no email' do
+        user.email = nil
+        expect(user).to_not be_valid
+      end
+
+      it 'should not authenticate if no password' do
+        user.password = nil
+        expect(user).to_not be_valid
+      end
+
+      it 'should authenticate if spaces around email' do
+        user.email = " some@email.com "
+        expect(user).to be_valid
+      end
+
+      it 'should authenticate even if wrong cased email' do
+        
+      end
+
+    end
 end
 
 
