@@ -16,12 +16,12 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Stripe Testing
 
-Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
-# More information in their docs: <https://stripe.com/docs/testing#cards>
-
-# To access Admin pages:
-# Username: Jungle
-# Password: book
+Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.<br/>
+More information in their docs: <https://stripe.com/docs/testing#cards><br/>
+<br/>
+To access Admin pages:<br/>
+Username: Jungle<br/>
+Password: book<br/>
 
 ## Dependencies
 
