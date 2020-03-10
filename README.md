@@ -1,7 +1,7 @@
 # Jungle
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
-
+!["Jungle_homepage"](https://github.com/fredbordel/jungle-rails/blob/master/docs/jungle_homepage.png?raw=true)
 
 ## Setup
 
